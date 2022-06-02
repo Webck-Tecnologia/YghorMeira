@@ -324,9 +324,30 @@
                            <td>
                             <input class="form-control floating" type="text" value="R$ 45">
                           </td>
+                          <style>
+                            /* Tooltip container */
+                            
+                            .fechado{
+                              position: relative;
+                            }
+                            /* Tooltip text */ .tooltiptext {
+                              display: none;
+                              position: absolute;
+                              font-weight: bold;
+                              bottom: 25px;
+                            
+                            }
+                            
+                            
+                            
+                            /* Show the tooltip text when you mouse over the tooltip container */
+                            .btn:hover .tooltiptext {
+                              display: inline;
+                            }
+                            </style>
                           <td>
-                            <a href="#" class="btn btn-primary shadow btn-xs sharp mr-1"><i class="fa fa-pencil"></i></a>
-                            <a href="#" class="btn btn-danger shadow btn-xs sharp mr-1"><i class="fa fa-trash"></i></a>
+                            <a href="#" class="btn btn-primary shadow btn-xs sharp"><i class="fa fa-pencil"><div class="fechado"><span class="tooltiptext">Editar</span></div></i></a>
+                            <a href="#" class="btn btn-danger shadow btn-xs sharp mr-1"><i class="fa fa-trash"><div class="fechado"><span class="tooltiptext">Excluir</span></div></i></a>
                           </td>
                         </tr>
                         </tr>
